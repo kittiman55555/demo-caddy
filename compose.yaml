@@ -1,0 +1,12 @@
+services:
+  web:
+    container_name: web
+    image: kittiman555555/workshop:latest
+    platform: linux/amd64
+    ports:
+      - "3000:3000"
+    networks:
+      - web
+networks:
+  web:
+    external: true
